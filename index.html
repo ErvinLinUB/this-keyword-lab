@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3 - The this Keyword</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 2rem;
+        }
+        .color-btn, .swatch, .box {
+            cursor: pointer;
+            padding: 1rem;
+            margin: 0.5rem;
+            border: 2px solid #333;
+            display: inline-block;
+        }
+        .swatch {
+            width: 120px;
+            text-align: center;
+        }
+        .box {
+            width: 200px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            font-weight: bold;
+        }
+        .active {
+            outline: 4px solid limegreen;
+        }
+        #counter {
+            text-align: center;
+            margin: 2rem;
+        }
+        #counter button {
+            font-size: 1.5rem;
+            padding: 0.25rem 1rem;
+        }
+        #count-display {
+            font-size: 2rem;
+            margin: 0 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Exercise 1 markup -->
+    <section id="ex1">
+        <h2>Exercise 1 - Multi-Button Highlight</h2>
+        <button class="color-btn">Red</button>
+        <button class="color-btn">Blue</button>
+        <button class="color-btn">Green</button>
+    </section>
+
+    <!-- Exercise 2 markup -->
+    <section id="ex2">
+        <h2>Exercise 2 - Data Attribute Reader</h2>
+        <div class="swatch" data-color="tomato">Tomato</div>
+        <div class="swatch" data-color="steelblue">Steel Blue</div>
+        <div class="swatch" data-color="gold">Gold</div>
+    </section>
+
+    <!-- Exercise 3 markup -->
+    <section id="ex3">
+        <h2>Exercise 3 - Counter App</h2>
+        <div id="counter">
+            <button id="dec-btn">&minus;</button>
+            <span id="count-display">0</span>
+            <button id="inc-btn">+</button>
+        </div>
+    </section>
+
+    <!-- Exercise 4 markup -->
+    <section id="ex4">
+        <h2>Exercise 4 - Arrow Function Bug</h2>
+        <div class="box">Click Me</div>
+    </section>
+
+    <!-- Uncomment one at a time to test -->
+    <script src="exercise1.js"></script>
+    <script src="exercise2.js"></script>
+    <script src="exercise3.js"></script>
+    <script src="exercise4.js"></script>
+</body>
+</html>
